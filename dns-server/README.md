@@ -32,3 +32,12 @@ cp /home/building-linux-server/dns-server/db.127 /etc/bind/zones/db.2.0.10
 cp /home/building-linux-server/dns-server/named.conf.options /etc/bind/
 cp /home/building-linux-server/dns-server/named.conf.local /etc/bind/
 ```
+# Checking the DNS-CONFIRGURATION FILES FOR ANY ERRORS
+```
+named-checkzone example.com /etc/bind/zones/db.example.com
+named-checkzone 2.0.10.in-addr.arpa /etc/bind/zones/db.2.0.10
+```
+# TO CHECK FILES ALL ZONES IN ONE GO
+```
+named-checkconf -z
+```
