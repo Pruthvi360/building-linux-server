@@ -15,4 +15,5 @@ dns1.example.com.		IN	A	10.0.2.3
 
 ; 10.0.2.0/24 - A records
 dhcp.example.com.		IN	A	10.0.2.2
+ds1.example.com.		IN 	A 	10.0.2.4
 
