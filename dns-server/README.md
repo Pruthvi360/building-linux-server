@@ -18,3 +18,9 @@ systemctl status bind9
 dig @127.0.0.1 . NS
 nameserver 10.0.2.3 > /etc/resolv.conf
 ```
+# Download DNS configration files from git
+```
+cd /home
+cp db.local /etc/bind/zones/db.example.com
+cp db.127 /etc/bind/zones/db.2.0.10
+```
