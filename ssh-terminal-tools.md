@@ -4,6 +4,7 @@ apt install tilix -y
 yum install tilix -y
 ```
 ```
+tilix
 cntrl+alt+r  ----> For Right window
 cntrl+alt+d  ----> For down window
 ```
@@ -13,6 +14,7 @@ apt install tmux -y
 yum install tmux -y
 ```
 ```
+tmux
 cntrl+alt+r  ----> For Right window
 cntrl+alt+d  ----> For down window
 ```
