@@ -24,3 +24,20 @@ apt install isc-kea-dhcp4-server
 ```
 systemctl status isc-kea-dhcp4-server
 ```
+# set domain name
+```
+hostnamectl set-hostname dhcp.example.com
+```
+# Download kea-dhcp4.conf file form git
+```
+apt install git
+cd /home
+git clone https://github.com/Pruthvi360/building-linux-server.git
+cd building-linux-server/dhcp
+cp kea-dhcp4.conf /etc/kea
+```
+# check the syntax error in kea-dhcp4.conf file and check the status of the dhcp4 service
+```
+kea-dhcp4 -t kea-dhcp4.conf
+systemctl status isc-kea-dhcp4-server
+```
