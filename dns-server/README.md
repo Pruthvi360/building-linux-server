@@ -41,3 +41,21 @@ named-checkzone 2.0.10.in-addr.arpa /etc/bind/zones/db.2.0.10
 ```
 named-checkconf -z
 ```
+# Checking Resolving ip
+```
+dig -x 10.0.2.3
+```
+# Restarting the bind9 service
+```
+systemctl restart bind9
+systemctl status bind9
+journalctl -u bind9
+```
+# Checking zone transfers for Forward lookup zone
+```
+dig example.com axfr  #Zone Transfer shoundn't happen it should fail
+```
+# Checking ports
+```
+ss -tulnw
+```
