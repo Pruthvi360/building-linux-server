@@ -41,9 +41,9 @@ apt install git
 cd /home
 git clone https://github.com/Pruthvi360/building-linux-server.git
 cd building-linux-server/dhcp
-mv /etc/kea/kea-dhcp.conf /etc/kea/kea-dhcp.conf.bak
-mv kea-dhcp.conf-postgresql /etc/kea
-mv /etc/kea/kea-dhcp.conf-postgresql /etc/kea/kea-dhcp.conf
+mv /etc/kea/kea-dhcp4.conf /etc/kea/kea-dhcp4.conf.bak
+mv kea-dhcp4.conf-postgresql /etc/kea
+mv /etc/kea/kea-dhcp4.conf-postgresql /etc/kea/kea-dhcp4.conf
 ```
 # check the syntax error in kea-dhcp4.conf file and check the status of the dhcp4 service
 ```
