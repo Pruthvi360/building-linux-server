@@ -59,3 +59,15 @@ dig example.com axfr  #Zone Transfer shoundn't happen it should fail
 ```
 ss -tulnw
 ```
+# Note:
+```
+External lan DNS and DHCP service should be turned off
+```
+# Checking from client side
+```
+ping dhcp
+ping ds1
+ping dns1
+dig dhcp
+dig +noall +answer -x 10.0.2.2
+```
