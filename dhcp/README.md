@@ -1,3 +1,10 @@
+# Static IP for the DHCP server
+```
+nmcli con modify 'Wired connection 2' ipv4.method manual ipv4.address 10.0.1.2/24 ipv4.gateway 10.0.1.1
+nmcli con down 'Wired connection 2'
+nmcli con up 'Wired connection 2'
+```
+
 # Installing the DHCP server using ISC kea 2.4
 ```
 curl -1sLf \
