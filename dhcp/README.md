@@ -56,5 +56,5 @@ ss -tulwn
 # Install kea-admin 
 ```
 sudo apt install isc-kea-admin -y
-kea-admin lease-dump psql -4 -n kea -u keauser -p keauser -o dumpfile
+kea-admin lease-dump pgsql -4 -n kea -u keauser -p keauser -o dumpfile
 ```
