@@ -20,7 +20,15 @@ nameserver 10.0.2.3 > /etc/resolv.conf
 ```
 # Download DNS configration files from git
 ```
+mv /etc/bind/named.conf.options /etc/bind/named.conf.options.backup
+mv /etc/bind/named.conf.local /etc/bind/named.conf.options.local
+mkdir /etc/bind/zones
+apt install git -y
 cd /home
-cp db.local /etc/bind/zones/db.example.com
-cp db.127 /etc/bind/zones/db.2.0.10
+git clone https://github.com/Pruthvi360/building-linux-server.git
+cd /home/building-linux-server/dns-server
+cp /home/building-linux-server/dns-server/db.local /etc/bind/zones/db.example.com
+cp /home/building-linux-server/dns-server/db.127 /etc/bind/zones/db.2.0.10
+cp /home/building-linux-server/dns-server/named.conf.options /etc/bind/
+cp /home/building-linux-server/dns-server/named.conf.local /etc/bind/
 ```
