@@ -46,6 +46,7 @@ systemctl status isc-kea-dhcp4-server
 ```
 journalctl -u isc-kea-dhcp4-server
 journalctl -u isc-kea-dhcp4-server | tail -n 20
+journalctl -u isc-kea-dhcp4-server | tail -n 20 | less
 ```
 # Check for open ports
 ```
