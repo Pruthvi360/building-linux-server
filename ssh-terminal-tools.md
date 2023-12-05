@@ -12,9 +12,22 @@ cntrl+alt+d  ----> For down window
 ```
 apt install tmux -y
 yum install tmux -y
-```
-```
 tmux
-cntrl+alt+r  ----> For Right window
-cntrl+alt+d  ----> For down window
+```
+# Panes:
+```
+Split the current pane horizontally:
+Press Ctrl-b followed by %.
+
+Split the current pane vertically:
+Press Ctrl-b followed by ".
+
+Switch between panes:
+Press Ctrl-b followed by an arrow key (left, right, up, down).
+
+Toggle between horizontal and vertical layout for panes:
+Press Ctrl-b followed by Spacebar.
+
+Close the current pane:
+Press Ctrl-b followed by x.
 ```
