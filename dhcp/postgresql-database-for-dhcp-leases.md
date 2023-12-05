@@ -69,3 +69,8 @@ journalctl -u isc-kea-dhcp4-server | tail -n 20 | less
 ss -tulw
 ss -tulwn
 ```
+# Install kea-admin 
+```
+sudo apt install isc-kea-admin -y
+kea-admin lease-dump pgsql -4 -n kea -u keauser -p keauser -o dumpfile
+```
