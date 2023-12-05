@@ -38,12 +38,14 @@ cp kea-dhcp4.conf /etc/kea
 ```
 # check the syntax error in kea-dhcp4.conf file and check the status of the dhcp4 service
 ```
-kea-dhcp4 -t kea-dhcp4.conf
+kea-dhcp4 -t /etc/kea/kea-dhcp4.conf
+kea-dhcp4 -t /etc/kea/kea-dhcp4.conf | less
 systemctl status isc-kea-dhcp4-server
 ```
 # Check for logs
 ```
 journalctl -u isc-kea-dhcp4-server
+journalctl -u isc-kea-dhcp4-server | tail -n 20
 ```
 # Check for open ports
 ```
