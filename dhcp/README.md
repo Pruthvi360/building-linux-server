@@ -41,3 +41,12 @@ cp kea-dhcp4.conf /etc/kea
 kea-dhcp4 -t kea-dhcp4.conf
 systemctl status isc-kea-dhcp4-server
 ```
+# Check for logs
+```
+journalctl -u isc-kea-dhcp4-server
+```
+# Check for open ports
+```
+ss -tulw
+ss -tulwn
+```
